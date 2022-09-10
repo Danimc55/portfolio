@@ -6,8 +6,8 @@ import { sortMDByDate } from "@/util";
 import type { Post } from "@/types";
 
 const meta = {
-	title: "Astro Cactus",
-	description: "The perfect starter for your perfect blog.",
+	title: "Danijel Tomić",
+	description: "Young Developer/Entropenuer based in Slovenia.",
 };
 
 const MAX_POSTS = 10;
@@ -19,10 +19,13 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 	<section>
 		<h1 class="mb-6 title">Hello World!</h1>
 		<p class="mb-4">
-			Hi, I’m a theme for Astro, an example of how you can use this starter to
-			create a personal blog. If you want to know more about how you can
-			customise me, add more posts, and make it your own, click on one of the
-			social links which will take you to my repo.
+			Hi my name is Danijel. I am a young Developer/Entropenuer from Slovenia. I
+			am currently working at my startup <a
+				href="https://astro.build"
+				target="_blank"
+				class="inline-block cactus-link"
+				>Škrinca
+			</a>.
 		</p>
 		<SocialList />
 	</section>
@@ -31,7 +34,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				allPostsByDate.map((p) => (
-					<li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full">
+					<li class="[&_q]:w-full flex flex-wrap items-center gap-x-2">
 						<BlogPostPreview post={p} as="h2" />
 					</li>
 				))
@@ -39,7 +42,42 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		</ul>
 	</section>
 	<section class="mt-16">
-		<h2 class="mb-4 text-xl title">Technologies</h2>
+		<h2 class="mb-4 text-xl title">Projects</h2>
+		<ul class="space-y-4 sm:space-y-2">
+			<li>
+				<a
+					href="https://www.skrinca.com/"
+					target="_blank"
+					class="inline-block cactus-link"
+					>Škrinca
+				</a>:
+				<p class="inline-block sm:mt-2">
+					A 21st century multitool the shape of a Wafer.
+				</p>
+			</li>
+			<li>
+				<a href="www.spalko.si" target="_blank" class="inline-block cactus-link"
+					>Spalko.si
+				</a>:
+				<p class="inline-block sm:mt-2">
+					A website that makes young people aware of the importance of sleep.
+				</p>
+			</li>
+			<li>
+				<a
+					href="https://www.youtube.com/watch?v=E3qiH28ksBw"
+					target="_blank"
+					class="inline-block cactus-link"
+					>NAO Rock Paper Scissors
+				</a>:
+				<p class="inline-block sm:mt-2">
+					Program that allows RPS through computer vision.
+				</p>
+			</li>
+		</ul>
+	</section>
+	<section class="mt-16">
+		<h2 class="mb-4 text-xl title">Technologies I like to use</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			<li>
 				<a
@@ -53,19 +91,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 			</li>
 			<li>
 				<a
-					href="https://docs.astro.build/en/guides/integrations-guide/image/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="inline-block cactus-link"
-					>@astro/image
-				</a>:
-				<p class="inline-block sm:mt-2">
-					An Astro integration for optimising images in Astro projects.
-				</p>
-			</li>
-			<li>
-				<a
-					href="https://tailwindcss.com"
+					href="https://tailwindcss.com/"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="inline-block cactus-link"
@@ -77,13 +103,25 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 			</li>
 			<li>
 				<a
-					href="https://mdxjs.com/"
+					href="https://flutter.dev"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="inline-block cactus-link"
-					>MDX
+					>Flutter
 				</a>:
-				<p class="inline-block sm:mt-2">Markdown for the component era.</p>
+				<p class="inline-block sm:mt-2">Build cross-platform apps.</p>
+			</li>
+			<li>
+				<a
+					href="https://nextjs.org"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="inline-block cactus-link"
+					>Next.js
+				</a>:
+				<p class="inline-block sm:mt-2">
+					Build really cool websites that can scale.
+				</p>
 			</li>
 		</ul>
 	</section>
