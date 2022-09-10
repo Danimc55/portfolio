@@ -1,7 +1,7 @@
 {
-	"name": "Astro Theme Cactus Demo",
-	"short_name": "Astro_Cactus",
-	"description": "Starter blog site for Astro",
+	"name": "Danijel Tomić Portfolio",
+	"short_name": "Danijel Tomić",
+	"description": "Portfolio website for Danijel Tomić",
 	"icons": [
 		{
 			"src": "images/icon/192x192.png",
