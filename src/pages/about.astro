@@ -1,11 +1,9 @@
 ---
 import PageLayout from "@/layouts/Base";
 import { Image } from "@astrojs/image/components";
-import aboutImg from "../assets/about-astro.png";
-
 const meta = {
-	title: "About",
-	description: "I'm a starter theme for Astro",
+	title: "About me",
+	description: "Introducing myself",
 };
 ---
 
@@ -13,33 +11,38 @@ const meta = {
 	<div class="space-y-6">
 		<h1 class="title">About</h1>
 		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started
-			with your own blogging website.
+			Hello! My name is Danijel. I am a 18 year old Developer/Entropenuer from
+			Slovenia. I started my development path at the age of 12. With Python,
+			HTML & CSS. I also dabble in some graphic design.
 		</p>
-		<div class="flex justify-center">
-			<Image src={aboutImg} alt="A cartoon cactus looking at 'Astro.build' logo"
-			/>
-		</div>
-		<p>Here are my some of my awesome built in features:</p>
+		<p>
+			I am still studying computer science. I'm in my 4th year of Computer
+			Science secondary school. In school we worked with a variety of tools such
+			as:
+		</p>
 		<ul class="list-disc list-inside">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
+			<li>Python + Libraries(Pygame, Tensorflow, OpenCV)</li>
+			<li>Java & Kotlin</li>
+			<li>Php (Sadly)</li>
+			<li>Sql</li>
+			<li>Adobe CC</li>
+			<li>GNU Linux</li>
+			<li>C for Embedded</li>
 		</ul>
 		<p>
-			Clone or fork my
-			<a
-				class="inline-block cactus-link"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="github repository"
-			>
-				repo
-			</a> if you like me!
+			Recently in March of 2022 i have Co-founded our startup Škrinca. Our
+			product is The Wafer. What is it? It is a Multitool in the shape of a
+			Neapolitan wafer. It features a Bluetooth tracker, USB flash drive,
+			screwdriver, file, bottle opener. What does it look like? I'll show you
+			our very first prototype.
 		</p>
+		<div class="grid justify-center my-4">
+			<Image
+				src="https://katapult.si/wp-content/uploads/2022/05/skrinca-dijaki-in-katapult-6.jpg"
+				alt="A cartoon cactus looking at 'Astro.build' logo"
+				height={300}
+				width={600}
+			/>
+		</div>
 	</div>
 </PageLayout>
